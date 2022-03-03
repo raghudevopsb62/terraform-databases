@@ -13,10 +13,11 @@ module "rabbitmq" {
 
 
 
-//module "mysql" {
-//  source = "./mysql"
-//}
-//
+module "mysql" {
+  source = "./mysql"
+  ENV    = var.ENV
+}
+
 //module "redis" {
 //  source = "./redis"
 //}
