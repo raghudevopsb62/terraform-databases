@@ -18,8 +18,13 @@ module "mysql" {
   ENV    = var.ENV
 }
 
-//module "redis" {
-//  source = "./redis"
-//}
-//
+module "redis" {
+  source = "./redis"
+  ENV    = var.ENV
+}
 
+
+
+output "redis" {
+  value = module.redis.redis
+}
