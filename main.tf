@@ -25,6 +25,6 @@ module "mysql" {
 
 
 output "mysql" {
-  value     = module.mysql.mysql
+  value     = nonsensitive(module.mysql.mysql)
   sensitive = true
 }
