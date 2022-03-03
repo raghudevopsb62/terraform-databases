@@ -23,7 +23,3 @@ module "mysql" {
 //}
 //
 
-
-output "mysql" {
-  value = nonsensitive(module.mysql.mysql)
-}
