@@ -21,6 +21,6 @@ resource "aws_db_subnet_group" "mysql" {
   }
 }
 
-outputs "mysql" {
+output "mysql" {
   value = aws_db_instance.default
 }
