@@ -5,15 +5,19 @@ module "mongodb" {
 
 }
 
+module "rabbitmq" {
+  source                 = "./rabbitmq"
+  ENV                    = var.ENV
+  RABBITMQ_INSTANCE_TYPE = var.RABBITMQ_INSTANCE_TYPE
+}
+
+
+
 //module "mysql" {
 //  source = "./mysql"
 //}
 //
 //module "redis" {
 //  source = "./redis"
-//}
-//
-//module "rabbitmq" {
-//  source = "./rabbitmq"
 //}
 //
